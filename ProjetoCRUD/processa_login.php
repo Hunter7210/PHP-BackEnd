@@ -1,12 +1,12 @@
 <?php
 require_once 'conectaBD.php';
 // Conectar ao BD (com o PHP)
-/*
+
 echo '<pre>';
 print_r($_POST);
 echo '</pre>';
 die();
-*/
+
 // Verificar se está chegando dados por POST
 if (!empty($_POST)) {
     // Iniciar SESSAO (session_start)
