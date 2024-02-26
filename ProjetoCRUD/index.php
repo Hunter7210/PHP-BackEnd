@@ -31,10 +31,9 @@
             <div class="col-4">
                 <label for="senha">Senha</label>
                 <input type="password" name="senha" id="senha" class="form-control">
-            </div><br />
+            </div><br/>
 
-            <button type="submit" name="enviarDados" class="btn btn-
-primary">Entrar</button>
+            <button type="submit" name="enviarDados" class="btn btn-primary">Entrar</button>
 
             <a href="cad_usuario.php" class="btn btn-warning">Cadastrar-se</a>
         </form>

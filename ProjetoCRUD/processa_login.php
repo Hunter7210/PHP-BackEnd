@@ -2,19 +2,18 @@
 require_once 'conectaBD.php';
 // Conectar ao BD (com o PHP)
 
-echo '<pre>';
+/* echo '<pre>';
 print_r($_POST);
 echo '</pre>';
 die();
-
+ */
 // Verificar se está chegando dados por POST
 if (!empty($_POST)) {
     // Iniciar SESSAO (session_start)
     session_start();
     try {
         // Montar a SQL
-        $sql = "SELECT nome, email, telefone, data_nascimento FROM usuario WHERE email =
-    :email AND senha = :senha";
+        $sql = "SELECT nome, email, telefone, data_nascimento FROM usuario WHERE email = :email AND senha = :senha";
         // Preparar a SQL (pdo)
         $stmt = $pdo->prepare($sql);
         // Definir/Organizar os dados p/ SQL
